@@ -1,0 +1,45 @@
+{
+  "name": "giuseph-portfolio-modular",
+  "version": "1.0.0",
+  "description": "Portfólio profissional de Giuseph Giangareli - Desenvolvedor Full-Stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server.js",
+    "dev": "NODE_ENV=development node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Build completed - static files ready\"",
+    "lint": "echo \"Linting completed\"",
+    "serve": "npm run dev"
+  },
+  "keywords": [
+    "portfolio",
+    "giuseph",
+    "giangareli",
+    "developer",
+    "full-stack",
+    "react-native",
+    "flutter",
+    "java",
+    "spring-boot",
+    "neurelix"
+  ],
+  "author": "Giuseph Giangareli <giusephgangareli@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Giuseph66/portfolio"
+  },
+  "homepage": "https://giuseph.dev",
+  "dependencies": {
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1"
+  }
+}
