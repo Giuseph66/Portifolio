@@ -378,7 +378,7 @@ export class HUD {
         toggle.innerHTML = '📄 Modo Clássico';
         toggle.addEventListener('click', () => {
             localStorage.setItem('portfolioMode', 'classic');
-            window.location.href = '/classic';
+            window.location.href = '/classic/classic.html';
         });
         
         toggle.addEventListener('mouseenter', () => {

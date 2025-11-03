@@ -551,7 +551,7 @@ export class Controls {
         const newMode = currentMode === "galaxy" ? "classic" : "galaxy";
         localStorage.setItem("portfolioMode", newMode);
         
-        const url = newMode === "galaxy" ? "/galaxy" : "/classic";
+        const url = newMode === "galaxy" ? "/galaxy/galaxy.html" : "/classic/classic.html";
         window.location.href = url;
     }
 
