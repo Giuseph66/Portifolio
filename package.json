@@ -11,7 +11,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "npm run dev",
     "galaxy": "npm run dev",
-    "classic": "cd classic && npm run dev"
+    "classic": "cd classic && npm run dev",
+    "deploy:netlify": "npx netlify-cli deploy --prod --dir=.",
+    "login:netlify": "npx netlify-cli login"
   },
   "keywords": [
     "portfolio",
@@ -43,7 +45,9 @@
     "cors": "^2.8.5",
     "express": "^4.19.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "netlify-cli": "^23.9.5"
+  },
   "volta": {
     "node": "18.19.0"
   }
