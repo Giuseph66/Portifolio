@@ -5,10 +5,20 @@
   # Comando de build (se necessário)
   command = "npm run build"
 
-# Redirecionamentos específicos para Galaxy e Classic
+# Redirecionamentos diretos para os arquivos HTML
+[[redirects]]
+  from = "/galaxy"
+  to = "/galaxy/galaxy.html"
+  status = 200
+
 [[redirects]]
   from = "/galaxy/"
   to = "/galaxy/galaxy.html"
+  status = 200
+
+[[redirects]]
+  from = "/classic"
+  to = "/classic/classic.html"
   status = 200
 
 [[redirects]]
