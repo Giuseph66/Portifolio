@@ -59,7 +59,7 @@ class ProjectsLoader {
                     </div>
                     <div class="project-actions">
                         ${project.githubUrl ? `<a href="${project.githubUrl}" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> Código</a>` : ''}
-                        ${project.demoUrl ? `<a href="${project.demoUrl}" target="_blank" class="btn btn-primary">Demo</a>` : '<a href="#" class="btn btn-primary disabled">Demo</a>'}
+                        ${project.demoUrl ? `<a href="${project.demoUrl}" target="_blank" class="btn btn-primary">${project.status === 'production' ? 'Acesso' : 'Demo'}</a>` : ''}
                     </div>
                 </div>
             `;
