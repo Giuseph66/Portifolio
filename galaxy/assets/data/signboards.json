@@ -47,7 +47,7 @@
     "rotation": { "x": 0, "y": 15, "z": 0 },
     "size": { "width": 18, "height": 9, "depth": 0.5 },
     "text": {
-      "content": "SKILLS: FRONTEND\n\nReact • TypeScript • HTML • CSS • Tailwind",
+      "content": "SKILLS: FRONTEND\n\n• React Native & TypeScript  \n• Flutter \n• HTML & CSS \n• Tailwind",
       "fontSize": 10,
       "fontFamily": "Inter, sans-serif",
       "color": "#9d4edd",
@@ -69,7 +69,7 @@
     "rotation": { "x": 0, "y": -15, "z": 0 },
     "size": { "width": 18, "height": 9, "depth": 0.5 },
     "text": {
-      "content": "SKILLS: BACKEND\n\nNode.js • Express • Java • Spring Boot • Python",
+      "content": "SKILLS: BACKEND\n\n• Node.js & Express \n• Java & Spring Boot \n• Python & FastAPI",
       "fontSize": 10,
       "fontFamily": "Inter, sans-serif",
       "color": "#00d4ff",
@@ -91,7 +91,7 @@
     "rotation": { "x": 0, "y": 15, "z": 0 },
     "size": { "width": 18, "height": 9, "depth": 0.5 },
     "text": {
-      "content": "SKILLS: MOBILE\n\nReact Native • Expo • Flutter • Firebase",
+      "content": "SKILLS: MOBILE\n\n• React Native & Expo \n• Flutter \n• Firebase",
       "fontSize": 10,
       "fontFamily": "Inter, sans-serif",
       "color": "#ff6b35",
@@ -113,7 +113,7 @@
     "rotation": { "x": 0, "y": -15, "z": 0 },
     "size": { "width": 18, "height": 9, "depth": 0.5 },
     "text": {
-      "content": "SKILLS: DEVOPS\n\nDocker • AWS • Git • CI/CD • Cloudflare",
+      "content": "SKILLS: DEVOPS\n\n• Docker \n• AWS \n• Git \n• CI/CD \n• Cloudflare",
       "fontSize": 10,
       "fontFamily": "Inter, sans-serif",
       "color": "#06ffa5",
@@ -135,7 +135,7 @@
     "rotation": { "x": 0, "y": 15, "z": 0 },
     "size": { "width": 18, "height": 9, "depth": 0.5 },
     "text": {
-      "content": "SKILLS: AI\n\nPython • Gemini AI • OpenCV • face_recognition",
+      "content": "SKILLS: AI\n\n• Python \n• Gemini AI \n• OpenCV \n• face_recognition",
       "fontSize": 10,
       "fontFamily": "Inter, sans-serif",
       "color": "#e94560",
@@ -157,7 +157,7 @@
     "rotation": { "x": 0, "y": -15, "z": 0 },
     "size": { "width": 18, "height": 9, "depth": 0.5 },
     "text": {
-      "content": "SKILLS: DATABASE\n\nPostgreSQL • MySQL • MongoDB • Firebase",
+      "content": "SKILLS: DATABASE\n\n• PostgreSQL \n• MySQL \n• MongoDB \n• Firebase",
       "fontSize": 10,
       "fontFamily": "Inter, sans-serif",
       "color": "#f1c40f",
@@ -175,55 +175,11 @@
     "target": { "enabled": true, "color": "#f1c40f" }
   },
   {
-    "position": { "x": -32, "y": 10, "z": 60 },
-    "rotation": { "x": 0, "y": 15, "z": 0 },
-    "size": { "width": 18, "height": 9, "depth": 0.5 },
-    "text": {
-      "content": "PAP - Sistema de Entregas\n\nPlataforma de entregas com matching geoespacial e PIX.",
-      "fontSize": 10,
-      "fontFamily": "Inter, sans-serif",
-      "color": "#ff6b35",
-      "align": "center",
-      "verticalAlign": "middle",
-      "lineHeight": 1.3,
-      "padding": 30
-    },
-    "style": "modern",
-    "background": { "color": "#10142b", "opacity": 0.9 },
-    "border": { "enabled": true, "width": 0.2, "color": "#ff6b35", "style": "glow" },
-    "effects": { "glow": true, "glowIntensity": 0.6, "glowColor": "#ff6b35", "pulse": true, "pulseSpeed": 0.6 },
-    "stand": { "enabled": true, "type": "double", "height": 5, "color": "#333366" },
-    "action": { "type": "project", "id": "pap-delivery" },
-    "target": { "enabled": true, "color": "#ff6b35" }
-  },
-  {
-    "position": { "x": 32, "y": 10, "z": 60 },
-    "rotation": { "x": 0, "y": -15, "z": 0 },
-    "size": { "width": 18, "height": 9, "depth": 0.5 },
-    "text": {
-      "content": "Desafio Esfera Solar\n\nConsulta CNPJ • Flutter Web • Node.js • PostgreSQL",
-      "fontSize": 10,
-      "fontFamily": "Inter, sans-serif",
-      "color": "#00d4ff",
-      "align": "center",
-      "verticalAlign": "middle",
-      "lineHeight": 1.3,
-      "padding": 30
-    },
-    "style": "modern",
-    "background": { "color": "#10142b", "opacity": 0.9 },
-    "border": { "enabled": true, "width": 0.2, "color": "#00d4ff", "style": "glow" },
-    "effects": { "glow": true, "glowIntensity": 0.6, "glowColor": "#00d4ff", "pulse": true, "pulseSpeed": 0.6 },
-    "stand": { "enabled": true, "type": "double", "height": 5, "color": "#333366" },
-    "action": { "type": "project", "id": "esfera-solar" },
-    "target": { "enabled": true, "orient": "horizontal", "color": "#00d4ff" }
-  },
-  {
     "position": { "x": -22, "y": 10, "z": 90 },
     "rotation": { "x": 0, "y": 15, "z": 0 },
     "size": { "width": 18, "height": 9, "depth": 0.5 },
     "text": {
-      "content": "Sistema de Relatórios com IA\n\nTranscrição de áudio + geração com IA + exportação PDF",
+      "content": "Sistema de Relatórios com IA\n\n• Transcrição de áudio \n• Geração com IA \n• Exportação PDF",
       "fontSize": 10,
       "fontFamily": "Inter, sans-serif",
       "color": "#e94560",
@@ -245,7 +201,7 @@
     "rotation": { "x": 0, "y": -15, "z": 0 },
     "size": { "width": 18, "height": 9, "depth": 0.5 },
     "text": {
-      "content": "LabPage Backend\n\nSpring Boot • JWT • Swagger • PostgreSQL",
+      "content": "LabPage Backend\n\n• Spring Boot \n• JWT \n• Swagger \n• PostgreSQL",
       "fontSize": 10,
       "fontFamily": "Inter, sans-serif",
       "color": "#9d4edd",
@@ -267,7 +223,7 @@
     "rotation": { "x": 0, "y": 0, "z": 0 },
     "size": { "width": 18, "height": 9, "depth": 0.5 },
     "text": {
-      "content": "Neurelix Website\n\nInstitucional • Animações • SEO",
+      "content": "Neurelix Website\n\n• Institucional \n• Animações \n• SEO",
       "fontSize": 10,
       "fontFamily": "Inter, sans-serif",
       "color": "#06ffa5",
