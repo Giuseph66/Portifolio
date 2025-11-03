@@ -5,28 +5,7 @@
   # Comando de build (se necessário)
   command = "npm run build"
 
-# Redirecionamentos diretos para os arquivos HTML
-[[redirects]]
-  from = "/galaxy"
-  to = "/galaxy/galaxy.html"
-  status = 200
-
-[[redirects]]
-  from = "/galaxy/"
-  to = "/galaxy/galaxy.html"
-  status = 200
-
-[[redirects]]
-  from = "/classic"
-  to = "/classic/classic.html"
-  status = 200
-
-[[redirects]]
-  from = "/classic/"
-  to = "/classic/classic.html"
-  status = 200
-
-# Redirecionamentos para subdiretórios
+# Redirecionamentos para subdiretórios dos modos
 [[redirects]]
   from = "/galaxy/*"
   to = "/galaxy/:splat"
