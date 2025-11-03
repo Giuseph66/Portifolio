@@ -18,7 +18,7 @@
     "border": { "enabled": true, "width": 0.25, "color": "#00d4ff", "style": "neon" },
     "effects": { "glow": true, "glowIntensity": 0.8, "glowColor": "#00d4ff", "pulse": true, "pulseSpeed": 0.7 },
     "stand": { "enabled": true, "type": "double", "height": 5, "color": "#333366" },
-    "target": { "enabled": true, "orient": "horizontal", "spinSpeed": 1.2, "pulse": true, "pulseSpeed": 2, "pulseAmplitude": 0.08, "baseScale": 1, "crosshair": { "color": "#00d4ff" }, "fadeNear": { "near": 10, "far": 120 } }
+    "target": { "enabled": false, "orient": "horizontal", "spinSpeed": 1.2, "pulse": true, "pulseSpeed": 2, "pulseAmplitude": 0.08, "baseScale": 1, "crosshair": { "color": "#00d4ff" }, "fadeNear": { "near": 10, "far": 120 } }
   },
   {
     "position": { "x": 26, "y": 11, "z": 230 },
