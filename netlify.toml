@@ -5,7 +5,18 @@
   # Comando de build (se necessário)
   command = "npm run build"
 
-# Redirecionamentos para SPA - servindo arquivos estáticos diretamente
+# Redirecionamentos específicos para Galaxy e Classic
+[[redirects]]
+  from = "/galaxy/"
+  to = "/galaxy/galaxy.html"
+  status = 200
+
+[[redirects]]
+  from = "/classic/"
+  to = "/classic/classic.html"
+  status = 200
+
+# Redirecionamentos para subdiretórios
 [[redirects]]
   from = "/galaxy/*"
   to = "/galaxy/:splat"
