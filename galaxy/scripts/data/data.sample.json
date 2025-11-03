@@ -1,0 +1,144 @@
+{
+  "profile": {
+    "name": "Giuseph Giangareli",
+    "title": "Full-Stack Developer",
+    "company": "Neurelix",
+    "location": "Sinop-MT, Brasil",
+    "bio": "Desenvolvedor Full-Stack apaixonado por tecnologia e fundador da Neurelix. Especializado em soluções completas, desde aplicativos mobile até sistemas web robustos. Minha paixão é transformar ideias em produtos digitais funcionais e inovadores.",
+    "email": "giusephgangareli@gmail.com",
+    "phone": "+55 (66) 99908-6599",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/giuseph-giangareli-1bb910272/",
+      "github": "https://github.com/Giuseph66",
+      "instagram": "https://www.instagram.com/giuseph_gian/",
+      "website": "https://neurelix.com.br/"
+    }
+  },
+  "skills": {
+    "frontend": [
+      { "name": "React", "level": 90 },
+      { "name": "React Native", "level": 85 },
+      { "name": "Flutter", "level": 80 },
+      { "name": "JavaScript", "level": 95 },
+      { "name": "TypeScript", "level": 90 },
+      { "name": "HTML5", "level": 95 },
+      { "name": "CSS3", "level": 90 },
+      { "name": "Tailwind", "level": 85 }
+    ],
+    "backend": [
+      { "name": "Node.js", "level": 90 },
+      { "name": "Express", "level": 85 },
+      { "name": "Java", "level": 80 },
+      { "name": "Spring Boot", "level": 75 },
+      { "name": "Python", "level": 85 },
+      { "name": "FastAPI", "level": 80 }
+    ],
+    "mobile": [
+      { "name": "React Native", "level": 90 },
+      { "name": "Expo", "level": 85 },
+      { "name": "Flutter", "level": 80 },
+      { "name": "Firebase", "level": 85 }
+    ],
+    "devops": [
+      { "name": "Docker", "level": 85 },
+      { "name": "AWS", "level": 75 },
+      { "name": "Git", "level": 95 },
+      { "name": "CI/CD", "level": 80 },
+      { "name": "Cloudflare", "level": 80 }
+    ],
+    "ai": [
+      { "name": "Python", "level": 85 },
+      { "name": "Google Gemini AI", "level": 80 },
+      { "name": "OpenCV", "level": 75 },
+      { "name": "face_recognition", "level": 70 }
+    ],
+    "database": [
+      { "name": "PostgreSQL", "level": 85 },
+      { "name": "MySQL", "level": 80 },
+      { "name": "MongoDB", "level": 80 },
+      { "name": "Firebase", "level": 85 }
+    ]
+  },
+  "projects": [
+    {
+      "id": "pap-delivery",
+      "title": "PAP - Sistema de Entregas",
+      "category": "mobile",
+      "status": "production",
+      "summary": "Plataforma completa de entregas ponto a ponto com sistema de matching geoespacial em tempo real, integração com pagamentos PIX e chat em tempo real.",
+      "description": "Sistema completo de entregas que conecta usuários e entregadores em tempo real. Implementa algoritmos de matching geoespacial, rastreamento em tempo real via Google Maps, sistema de pagamentos integrado e chat bidirecional.",
+      "tags": ["React Native", "TypeScript", "Firebase", "Google Maps API", "PIX", "Real-time"],
+      "tech": ["React Native", "TypeScript", "Firebase", "Firestore", "Google Maps API", "Geolocation"],
+      "links": {
+        "repo": "https://github.com/Giuseph66/PAP",
+        "demo": ""
+      },
+      "thumb": "assets/textures/project-pap.jpg",
+      "year": 2024
+    },
+    {
+      "id": "esfera-solar",
+      "title": "Desafio Esfera Solar",
+      "category": "web",
+      "status": "production",
+      "summary": "Sistema full-stack para consulta de CNPJ com interface responsiva desenvolvida em Flutter Web, backend robusto com Node.js e PostgreSQL, totalmente containerizado com Docker.",
+      "description": "Aplicação web completa para consulta e gerenciamento de dados de CNPJ. Frontend desenvolvido em Flutter Web com design responsivo, backend em Node.js com APIs RESTful, banco de dados PostgreSQL e deploy containerizado.",
+      "tags": ["Flutter Web", "Node.js", "PostgreSQL", "Docker", "REST API"],
+      "tech": ["Flutter", "Dart", "Node.js", "Express", "PostgreSQL", "Docker", "Docker Compose"],
+      "links": {
+        "repo": "https://github.com/Giuseph66/Desafio_projeto_esfera",
+        "demo": ""
+      },
+      "thumb": "assets/textures/project-esfera.jpg",
+      "year": 2024
+    },
+    {
+      "id": "relatorio-ia",
+      "title": "Sistema de Relatórios com IA",
+      "category": "ai",
+      "status": "production",
+      "summary": "Ferramenta inovadora para criação de relatórios acadêmicos com transcrição automática de áudio, geração de conteúdo usando IA e exportação em múltiplos formatos.",
+      "description": "Sistema inteligente que revoluciona a criação de relatórios acadêmicos. Utiliza Web Speech API para transcrição de áudio, Google Gemini AI para geração e refinamento de conteúdo, e oferece exportação em PDF e outros formatos.",
+      "tags": ["JavaScript", "Google Gemini AI", "Web Speech API", "PDF", "AI"],
+      "tech": ["JavaScript", "Google Gemini AI", "Web Speech API", "jsPDF", "HTML5"],
+      "links": {
+        "repo": "",
+        "demo": "https://relatorio.neurelix.com.br/"
+      },
+      "thumb": "assets/textures/project-relatorio.jpg",
+      "year": 2024
+    },
+    {
+      "id": "labpage-backend",
+      "title": "LabPage Backend",
+      "category": "backend",
+      "status": "development",
+      "summary": "Sistema backend enterprise-grade com arquitetura robusta e escalável, APIs REST documentadas com Swagger e autenticação segura com JWT.",
+      "description": "Backend corporativo desenvolvido com Java Spring Boot seguindo as melhores práticas de arquitetura de software. Implementa padrões de design, segurança avançada, documentação automática de APIs e testes unitários completos.",
+      "tags": ["Java", "Spring Boot", "PostgreSQL", "JWT", "Swagger", "REST API"],
+      "tech": ["Java", "Spring Boot", "Spring Security", "PostgreSQL", "JWT", "Swagger", "JUnit"],
+      "links": {
+        "repo": "https://github.com/Giuseph66/LabPage/tree/main/java-back",
+        "demo": ""
+      },
+      "thumb": "assets/textures/project-labpage.jpg",
+      "year": 2024
+    },
+    {
+      "id": "neurelix-website",
+      "title": "Neurelix Website",
+      "category": "web",
+      "status": "production",
+      "summary": "Website institucional da Neurelix com design moderno, animações suaves e otimização para SEO.",
+      "description": "Site institucional desenvolvido para a Neurelix, apresentando serviços, portfólio e informações da empresa. Design responsivo, animações em CSS/JS e otimização completa para motores de busca.",
+      "tags": ["HTML5", "CSS3", "JavaScript", "SEO", "Responsive"],
+      "tech": ["HTML5", "CSS3", "JavaScript", "GSAP", "Responsive Design"],
+      "links": {
+        "repo": "",
+        "demo": "https://neurelix.com.br/"
+      },
+      "thumb": "assets/textures/neurelix_sem_fundo.png",
+      "year": 2023
+    }
+  ]
+}

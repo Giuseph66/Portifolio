@@ -1,0 +1,144 @@
+{
+  "scale": {
+    "distancePerAU": 25,
+    "planetSizePerKm": 0.00015,
+    "moonSizePerKm": 0.00018,
+    "sunSizePerKm": 0.000009
+  },
+  "sun": {
+    "diameter_km": 1391000
+  },
+  "planets": [
+    {
+      "name": "Mercúrio",
+      "color": 9209427,
+      "diameter_km": 4880,
+      "semi_major_axis_km": 58000000,
+      "inclinationDeg": 7.0,
+      "speed": 0.02,
+      "moons": []
+    },
+    {
+      "name": "Vênus",
+      "color": 16764073,
+      "diameter_km": 12104,
+      "semi_major_axis_km": 108000000,
+      "inclinationDeg": 3.4,
+      "speed": 0.015,
+      "moons": []
+    },
+    {
+      "name": "Terra",
+      "color": 4888290,
+      "diameter_km": 12756,
+      "semi_major_axis_km": 149700000,
+      "inclinationDeg": 0.0,
+      "speed": 0.01,
+      "emissive": 2772362,
+      "moons": [
+        {
+          "name": "Lua",
+          "diameter_km": 3476,
+          "semi_major_axis_km": 384400,
+          "color": 12500670,
+          "speed": 0.06,
+          "shader": {
+            "color1": 11184810,
+            "color2": 8289918,
+            "color3": 4605510,
+            "noiseScale": 7.0,
+            "speed": 0.04
+          }
+        }
+      ],
+      "shader": {
+        "color1": 3355443,
+        "color2": 5592575,
+        "color3": 2236962,
+        "speed": 0.08,
+        "noiseScale": 6.0,
+        "emissiveStrength": 0.02
+      }
+    },
+    {
+      "name": "Marte",
+      "color": 14437054,
+      "diameter_km": 6792,
+      "semi_major_axis_km": 227900000,
+      "inclinationDeg": 1.85,
+      "speed": 0.008,
+      "moons": [
+        { "name": "Fobos", "diameter_km": 27, "color": 10132111, "speed": 0.08 },
+        { "name": "Deimos", "diameter_km": 15, "color": 11053296, "speed": 0.07 }
+      ]
+    },
+    {
+      "name": "Júpiter",
+      "color": 13159642,
+      "diameter_km": 139822,
+      "semi_major_axis_km": 778000000,
+      "inclinationDeg": 1.3,
+      "speed": 0.005,
+      "moons": [
+        { "name": "Io", "diameter_km": 3643, "color": 14080969, "speed": 0.09 },
+        { "name": "Europa", "diameter_km": 3100, "color": 13684962, "speed": 0.075 },
+        { "name": "Ganimedes", "diameter_km": 5262, "color": 11776971, "speed": 0.055 },
+        { "name": "Calisto", "diameter_km": 4820, "color": 9390962, "speed": 0.045 }
+      ],
+      "shader": {
+        "color1": 14540253,
+        "color2": 11184810,
+        "color3": 2105376,
+        "speed": 0.06,
+        "noiseScale": 3.5,
+        "banding": 0.25,
+        "bandStrength": 0.6
+      }
+    },
+    {
+      "name": "Saturno",
+      "color": 16441061,
+      "diameter_km": 120536,
+      "semi_major_axis_km": 1400000000,
+      "inclinationDeg": 2.49,
+      "hasRings": true,
+      "speed": 0.004,
+      "moons": [
+        { "name": "Titã", "diameter_km": 5150, "color": 13812940, "speed": 0.045 },
+        { "name": "Reia", "diameter_km": 1527, "color": 13159605, "speed": 0.06 },
+        { "name": "Jápeto", "diameter_km": 1470, "color": 9146746, "speed": 0.035 },
+        { "name": "Dione", "diameter_km": 1123, "color": 12829616, "speed": 0.065 },
+        { "name": "Tétis", "diameter_km": 1062, "color": 14277000, "speed": 0.07 },
+        { "name": "Encélado", "diameter_km": 504, "color": 15262835, "speed": 0.08 },
+        { "name": "Mimas", "diameter_km": 396, "color": 12436142, "speed": 0.085 }
+      ]
+    },
+    {
+      "name": "Urano",
+      "color": 5234151,
+      "diameter_km": 51118,
+      "semi_major_axis_km": 2900000000,
+      "inclinationDeg": 0.77,
+      "speed": 0.003,
+      "moons": [
+        { "name": "Titânia", "diameter_km": 1578, "color": 12500653, "speed": 0.055 },
+        { "name": "Oberon", "diameter_km": 1522, "color": 11053270, "speed": 0.05 },
+        { "name": "Umbriel", "diameter_km": 1170, "color": 9419184, "speed": 0.06 },
+        { "name": "Ariel", "diameter_km": 1160, "color": 12171722, "speed": 0.065 },
+        { "name": "Miranda", "diameter_km": 476, "color": 13289466, "speed": 0.075 }
+      ]
+    },
+    {
+      "name": "Netuno",
+      "color": 4287997,
+      "diameter_km": 49528,
+      "semi_major_axis_km": 4500000000,
+      "inclinationDeg": 1.77,
+      "speed": 0.002,
+      "moons": [
+        { "name": "Tritão", "diameter_km": 2706, "color": 12040145, "speed": 0.06 },
+        { "name": "Proteu", "diameter_km": 420, "color": 10263818, "speed": 0.08 }
+      ]
+    }
+  ]
+}

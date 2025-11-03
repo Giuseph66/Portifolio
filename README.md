@@ -1,107 +1,155 @@
-# 🚀 Meu Portfólio - Giuseph Giangareli
+# 🌌 Galaxy Portfolio
 
-Olá! Eu sou **Giuseph Giangareli**, desenvolvedor Full-Stack apaixonado por tecnologia e fundador da **Neurelix**. Este é meu portfólio digital onde apresento meus projetos, habilidades e experiência profissional.
+Portfólio interativo de Giuseph Giangareli com dois modos únicos: **Galaxy Explorer** (3D espacial) e **Classic** (tradicional).
 
-## 🎯 Sobre Mim
+## 🚀 Início Rápido
 
-Sou desenvolvedor Full-Stack especializado em soluções completas, desde aplicativos mobile até sistemas web robustos. Minha paixão é transformar ideias em produtos digitais funcionais e inovadores, sempre buscando as melhores práticas e tecnologias do mercado.
+### Pré-requisitos
+- Node.js >= 16.0.0
+- npm >= 8.0.0
 
-### 💼 Minha Trajetória
+### Instalação
+```bash
+# Instalar dependências
+npm install
 
-Comecei minha jornada na programação há alguns anos e desde então venho me dedicando ao desenvolvimento de soluções que realmente fazem a diferença. Fundei a **Neurelix** com o objetivo de levar tecnologia de qualidade para empresas e pessoas, focando sempre em inovação e resultados.
+# Iniciar servidor em modo desenvolvimento
+npm run dev
 
-## 🛠 Tecnologias que Domino
+# Ou em modo produção
+npm start
+```
 
-### Frontend & Mobile
-- **React & React Native** - Desenvolvimento de interfaces modernas e aplicativos móveis
-- **Flutter** - Apps multiplataforma com Dart
-- **JavaScript/TypeScript** - Desenvolvimento web moderno
-- **HTML5/CSS3** - Estrutura e estilização responsiva
+O servidor estará disponível em: **http://localhost:3000**
 
-### Backend & APIs
-- **Node.js & Express** - APIs RESTful e aplicações server-side
-- **Java & Spring Boot** - Sistemas enterprise robustos
-- **Python** - Automação e scripts inteligentes
+## 🌌 Modos Disponíveis
 
-### Banco de Dados & DevOps
-- **PostgreSQL, MySQL, MongoDB** - Modelagem e gerenciamento de dados
-- **Docker & AWS** - Containerização e infraestrutura na nuvem
-- **Git & CI/CD** - Controle de versão e deploy automatizado
+### Galaxy Explorer (Modo Principal)
+- **URL**: http://localhost:3000/galaxy ou http://localhost:3000/
+- **Tecnologias**: Three.js, WebGL, ES6 Modules
+- **Características**:
+  - Navegação 3D no espaço
+  - Sistema solar interativo
+  - Spaceship com controles WASD/QE
+  - Sistema de armas (laser/projetil)
+  - Signboards flutuantes
+  - Otimizações de performance automáticas
 
-## 🚀 Projetos em Destaque
+### Classic Mode (Modo Tradicional)
+- **URL**: http://localhost:3000/classic
+- **Tecnologias**: HTML5, CSS3, Vanilla JavaScript
+- **Características**:
+  - Design responsivo moderno
+  - Animações suaves
+  - Seções: Sobre, Projetos, Contato
+  - API backend completa
 
-Aqui estão alguns dos meus principais projetos que demonstram minha versatilidade e expertise:
+## 📋 Scripts Disponíveis
 
-### 📱 PAP - Sistema de Entregas
-**Tecnologias**: React Native, TypeScript, Firebase, Google Maps API
-- Plataforma completa de entregas ponto a ponto
-- Sistema de matching geoespacial em tempo real
-- Integração com pagamentos PIX
-- Chat em tempo real entre usuários e entregadores
-- **Status**: Em produção | **Acesso**: [GitHub](https://github.com/Giuseph66/PAP)
+```bash
+# Iniciar servidor (modo desenvolvimento)
+npm run dev
 
-### 🌐 Desafio Esfera Solar
-**Tecnologias**: Flutter Web, Node.js, PostgreSQL, Docker
-- Sistema full-stack para consulta de CNPJ
-- Interface responsiva desenvolvida com Flutter Web
-- Backend robusto com Node.js e PostgreSQL
-- Containerização completa com Docker
-- **Status**: Em produção | **Acesso**: [GitHub](https://github.com/Giuseph66/Desafio_projeto_esfera) 
+# Iniciar servidor (modo produção)
+npm start
 
-### 🤖 Sistema de Relatórios com IA
-**Tecnologias**: JavaScript, Google Gemini AI, Web Speech API
-- Ferramenta inovadora para criação de relatórios acadêmicos
-- Transcrição automática de áudio para texto
-- Geração de conteúdo usando inteligência artificial
-- Exportação em PDF e múltiplos formatos
-- **Status**: Em produção | **Acesso**: [relatorio.neurelix.com.br](https://relatorio.neurelix.com.br/)
+# Iniciar apenas o modo galáctico
+npm run galaxy
 
-### ☕ LabPage Backend
-**Tecnologias**: Java Spring Boot, PostgreSQL, JWT
-- Sistema backend enterprise-grade
-- Arquitetura robusta e escalável
-- APIs REST documentadas com Swagger
-- Autenticação e autorização seguras
-- **Status**: Em desenvolvimento | **Acesso**: [GitHub](https://github.com/Giuseph66/LabPage/tree/main/java-back)
+# Iniciar apenas o modo clássico
+npm run classic
+```
 
-## 🌟 Minha Abordagem
+## 🏗️ Estrutura do Projeto
 
-### Processo de Desenvolvimento
-1. **Descoberta** - Entendo profundamente suas necessidades e objetivos
-2. **Planejamento** - Estrategizo a melhor solução técnica e arquitetural
-3. **Desenvolvimento** - Implemento com código limpo e testes rigorosos
-4. **Entrega** - Deploy seguro e suporte contínuo
+```
+galaxy-portfolio/
+├── galaxy/                 # Modo Galáctico (3D)
+│   ├── galaxy.html        # Página principal
+│   ├── galaxy.css         # Estilos
+│   └── scripts/           # Módulos JavaScript
+│       ├── main.js        # Ponto de entrada
+│       ├── engine/        # Engine 3D (Three.js)
+│       ├── world/         # Elementos do mundo (planetas, nave, etc.)
+│       ├── ui/            # Interface (HUD, overlays)
+│       └── utils/         # Utilitários (cores, performance)
+├── classic/                # Modo Clássico (2D)
+│   ├── classic.html       # Página principal
+│   ├── classic.css        # Estilos
+│   ├── server.js          # Servidor Express (completo)
+│   └── assets/            # Recursos estáticos
+├── vendor/                 # Dependências externas
+│   ├── three.module.js    # Three.js
+│   ├── gsap.min.js        # GSAP
+│   └── howler.min.js      # Howler.js
+├── server.js              # Servidor principal (simples)
+├── package.json           # Dependências e scripts
+└── README.md              # Esta documentação
+```
 
-### Valores que Guio Meu Trabalho
-- **Qualidade** acima de quantidade
-- **Inovação** constante com tecnologias emergentes
-- **Transparência** em todos os processos
-- **Resultado** focado no sucesso do cliente
+## 🎮 Controles - Modo Galáctico
 
-## 📞 Vamos Conversar?
+| Tecla | Função |
+|-------|--------|
+| `WASD` | Movimentação (frente/trás/esquerda/direita) |
+| `QE` | Subir/Descer |
+| `Shift` | Turbo (velocidade aumentada) |
+| `Botão Direito` | Rotação da nave (modo normal) |
+| `Mouse` | Controle de voo (modo mouse flight) |
+| `V` | Alternar câmera (1ª/3ª pessoa) |
+| `M` | Ativar/desativar mouse flight |
+| `Espaço` | Autopilot (navega automaticamente) |
+| `Clique Esquerdo` | Atirar |
+| `Tab` | Trocar arma (laser/projetil) |
+| `G` | Alternar para modo clássico |
+| `H` | Ocultar HUD |
+| `ESC` | Sair do mouse flight |
 
-Adoro conversar sobre tecnologia, projetos e oportunidades! Você pode me encontrar:
+## 🔧 Desenvolvimento
 
-- **📧 Email**: giusephgangareli@gmail.com
-- **📱 WhatsApp**: +55 (66) 99908-6599
-- **💼 LinkedIn**: [giuseph-giangareli-1bb910272](https://www.linkedin.com/in/giuseph-giangareli-1bb910272/)
-- **🐙 GitHub**: [@Giuseph66](https://github.com/Giuseph66)
-- **📷 Instagram**: [@giuseph_gian](https://www.instagram.com/giuseph_gian/)
+### Adicionando Novos Projetos
+1. Editar `galaxy/assets/data/signboards.json` (modo galáctico)
+2. Editar `classic/assets/data/projects.js` (modo clássico)
 
-### 🌐 Neurelix
-Também fundei a **Neurelix**, minha empresa especializada em desenvolvimento de software, automação e soluções inteligentes. Conheça mais em: [neurelix.com.br](https://neurelix.com.br/)
+### Otimizações Implementadas
+- **Object Pooling** para lasers e projéteis
+- **Throttle** em animações (reduz updates por frame)
+- **Geometrias reduzidas** no sistema solar
+- **Renderização adaptativa** baseada em FPS
+- **Culling automático** de objetos distantes
 
-## 🏆 Reconhecimentos
+## 🌐 API Endpoints
 
-- **Localização**: Sinop-MT, Brasil 🇧🇷
-- **Especialidades**: Full-Stack Development, Mobile Apps, AI & Automation
-- **Experiência**: 4+ anos de desenvolvimento profissional
-- **Certificações**: AWS Cloud Practitioner, Google Cloud Associate, React Native Certified Developer
+- `GET /api/health` - Status do servidor
+- `GET /galaxy` - Modo galáctico
+- `GET /classic` - Modo clássico
 
----
+## 🚀 Deploy
 
-**"Tecnologia não é sobre ferramentas, é sobre resolver problemas e criar valor."**
+### Vercel (Recomendado)
+```bash
+# Instalar Vercel CLI
+npm i -g vercel
 
-⭐ Se gostou do meu trabalho, me mande uma mensagem! Vamos criar algo incrível juntos! 🚀
-# Portifolio
-# Portifolio
+# Deploy
+vercel --prod
+```
+
+### Outras Plataformas
+O projeto é compatível com:
+- Netlify
+- Heroku
+- Railway
+- Render
+
+## 📄 Licença
+
+MIT - Copyright (c) 2024 Giuseph Giangareli
+
+## 👨‍💻 Autor
+
+**Giuseph Giangareli**
+- Email: giusephgangareli@gmail.com
+- LinkedIn: [Giuseph Giangareli](https://linkedin.com/in/giuseph-giangareli)
+- GitHub: [@Giuseph66](https://github.com/Giuseph66)
+- Website: [giuseph.dev](https://giuseph.dev)

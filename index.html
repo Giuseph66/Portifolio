@@ -3,529 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/images/retomar.ico">
-    <title>Giuseph Giangareli</title>
-    <meta name="description" content="Desenvolvedor Full-Stack especializado em soluções completas com React Native, Flutter, Java Spring Boot e integrações inteligentes">
-    <meta name="keywords" content="Full-Stack, React Native, Flutter, Java Spring Boot, IA, Automação, Neurelix">
-    <meta name="author" content="Giuseph Giangareli">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://giuseph-portfolio.com/">
-    <meta property="og:title" content="Giuseph Giangareli | Neurelix — Full-Stack, IA & Automação">
-    <meta property="og:description" content="Desenvolvedor Full-Stack especializado em soluções completas com React Native, Flutter, Java Spring Boot e integrações inteligentes">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://giuseph-portfolio.com/">
-    <meta property="twitter:title" content="Giuseph Giangareli | Neurelix — Full-Stack, IA & Automação">
-    <meta property="twitter:description" content="Desenvolvedor Full-Stack especializado em soluções completas com React Native, Flutter, Java Spring Boot e integrações inteligentes">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/images/retomar.ico">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-    
-    <!-- Preload GitHub Icon -->
-    <link rel="preload" as="image" href="https://cdn-icons-png.flaticon.com/512/733/733609.png">
-    
-    <!-- CSS Modules -->
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/variables.css">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/sections.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/themes.css">
+    <meta name="description" content="Portfólio de Giuseph Giangareli - Desenvolvedor Full-Stack e Fundador da Neurelix">
+    <title>Giuseph Giangareli | Full-Stack Developer</title>
+    <link rel="icon" type="image/x-icon" href="galaxy/assets/textures/retomar.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1628 100%);
+            color: #e0e6ed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 900px;
+            padding: 2rem;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            border-radius: 50%;
+            border: 3px solid #00d4ff;
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
+            overflow: hidden;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #00d4ff 0%, #ff6b35 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.5)); }
+            to { filter: drop-shadow(0 0 20px rgba(255, 107, 53, 0.5)); }
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #a0aec0;
+            margin-bottom: 2rem;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #cbd5e0;
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .mode-selector {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .mode-card {
+            background: rgba(26, 32, 58, 0.8);
+            border: 2px solid transparent;
+            border-radius: 16px;
+            padding: 2rem;
+            width: 280px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .mode-card:hover {
+            transform: translateY(-8px);
+            border-color: #00d4ff;
+            box-shadow: 0 10px 40px rgba(0, 212, 255, 0.3);
+        }
+
+        .mode-card.galaxy:hover {
+            border-color: #00d4ff;
+            box-shadow: 0 10px 40px rgba(0, 212, 255, 0.4);
+        }
+
+        .mode-card.classic:hover {
+            border-color: #ff6b35;
+            box-shadow: 0 10px 40px rgba(255, 107, 53, 0.4);
+        }
+
+        .mode-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .mode-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .mode-desc {
+            font-size: 0.95rem;
+            color: #a0aec0;
+            line-height: 1.6;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            color: #0a0e27;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .badge.new {
+            background: linear-gradient(135deg, #ff6b35 0%, #cc5529 100%);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .subtitle { font-size: 1.2rem; }
+            .description { font-size: 1rem; }
+            .mode-card { width: 100%; }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container container">
-            <div class="nav-logo">
-                    <img src="assets/images/eu.png" alt="Giuseph Giangareli">
-                <a href="#home">Giuseph Giangareli</a>
-            </div>
-            
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li><a href="#competencias" class="nav-link">Competências</a></li>
-                <li><a href="#projetos" class="nav-link">Projetos</a></li>
-                <li><a href="#empresa" class="nav-link">Empresa</a></li>
-                <li><a href="#contato" class="nav-link">Contato</a></li>
-            </ul>
-            
-            <div class="nav-controls">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-                    <i class="fas fa-sun" id="theme-icon"></i>
-                </button>
-                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero section">
-            <div class="container hero-content">
-                <h1 class="hero-title animate-fadeInDown">Giuseph Giangareli</h1>
-                <h2 class="hero-subtitle animate-fadeInUp gradient-text">Neurelix</h2>
-                <p class="hero-description animate-fadeInUp">Desenvolvedor Full-Stack especializado em soluções completas</p>
-                <p class="hero-description animate-fadeInUp">Transformo ideias em realidade digital através de tecnologias modernas, integrações inteligentes e experiências excepcionais do usuário.</p>
-                
-                <div class="hero-badges animate-fadeInUp">
-                    <span class="badge badge-blue"><i class="fas fa-code"></i> Full-Stack</span>
-                    <span class="badge badge-green"><i class="fas fa-mobile-alt"></i> Mobile</span>
-                    <span class="badge badge-purple"><i class="fas fa-robot"></i> IA & Automação</span>
-                </div>
-                
-                <div class="hero-buttons animate-fadeInUp">
-                    <a href="#projetos" class="btn btn-primary hover-lift"><i class="fas fa-rocket"></i> Ver Projetos</a>
-                    <a href="https://wa.me//5566999086599" target="_blank" class="btn btn-whatsapp hover-lift"><i class="fab fa-whatsapp whatsapp-icon"></i> Falar no WhatsApp</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- How I Work Section -->
-        <section id="como-trabalho" class="section">
-            <div class="container">
-                <h2 class="section-title animate-fadeIn">Como Trabalho</h2>
-                <p class="section-subtitle animate-fadeIn">Meu processo estruturado garante resultados excepcionais em cada projeto</p>
-                
-                <div class="process-grid">
-                    <div class="process-card card animate-fadeInUp">
-                        <div class="process-icon"><i class="fas fa-lightbulb"></i></div>
-                        <h3>Descoberta</h3>
-                        <p>Entendo profundamente suas necessidades, objetivos e desafios para criar a solução ideal.</p>
-                    </div>
-                    <div class="process-card card animate-fadeInUp" style="animation-delay: 0.1s;">
-                        <div class="process-icon"><i class="fas fa-clipboard-list"></i></div>
-                        <h3>Planejamento</h3>
-                        <p>Desenvolvo uma estratégia detalhada com cronograma, tecnologias e arquitetura otimizada.</p>
-                    </div>
-                    <div class="process-card card animate-fadeInUp" style="animation-delay: 0.2s;">
-                        <div class="process-icon"><i class="fas fa-code"></i></div>
-                        <h3>Desenvolvimento</h3>
-                        <p>Implemento a solução com código limpo, testes rigorosos e atualizações constantes.</p>
-                    </div>
-                    <div class="process-card card animate-fadeInUp" style="animation-delay: 0.3s;">
-                        <div class="process-icon"><i class="fas fa-rocket"></i></div>
-                        <h3>Entrega</h3>
-                        <p>Realizo deploy seguro, treinamento completo e suporte contínuo pós-lançamento.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Me Section -->
-        <section id="sobre" class="section">
-            <div class="container">
-                <h2 class="section-title animate-fadeIn">Sobre Mim</h2>
-                <div class="about-content">
-                    <div class="about-text animate-fadeInLeft">
-                        <p>Sou desenvolvedor Full-Stack apaixonado por criar soluções digitais que fazem a diferença. Com experiência em tecnologias modernas como React Native, Flutter, Java Spring Boot e integrações com IA, transformo ideias complexas em aplicações funcionais e intuitivas.</p>
-                        <p>Fundei a <strong>Neurelix</strong>, uma empresa focada em desenvolvimento de software, automação e soluções inteligentes. Acredito que a tecnologia deve ser acessível e resolver problemas reais das pessoas e empresas.</p>
-                        <p>Quando não estou codificando, gosto de estudar novas tecnologias, contribuir com a comunidade de desenvolvedores e pensar em como a IA pode revolucionar ainda mais nossas vidas.</p>
-                        
-                        <div class="about-contact-info">
-                            <p><i class="fas fa-map-marker-alt"></i> Sinop-MT, Brasil</p>
-                            <p><i class="fas fa-envelope"></i> giusephgangareli@gmail.com</p>
-                            <p><i class="fas fa-phone"></i> +55 (66) 99908-6599</p>
-                            <p><i class="fas fa-building"></i> Fundador da Neurelix</p>
-                        </div>
-                        
-                        <div class="about-social-links">
-                            <a href="https://www.linkedin.com/in/giuseph-giangareli-1bb910272/" target="_blank" class="btn btn-linkedin hover-lift" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/Giuseph66" target="_blank" class="btn btn-github hover-lift" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://www.instagram.com/giuseph_gian/" target="_blank" class="btn btn-instagram hover-lift" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="about-avatar animate-fadeInRight">
-                        <img src="assets/images/eu.png" alt="Giuseph Giangareli" class="avatar">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="competencias" class="section">
-            <div class="container">
-                <h2 class="section-title animate-fadeIn">Competências Técnicas</h2>
-                <p class="section-subtitle animate-fadeIn">Domínio em tecnologias modernas para desenvolvimento completo de soluções</p>
-                
-                <div class="skills-grid">
-                    <div class="skill-card card animate-fadeInUp">
-                        <h3>Frontend</h3>
-                        <div class="skill-badges">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">TypeScript</span>
-                        </div>
-                    </div>
-                    <div class="skill-card card animate-fadeInUp" style="animation-delay: 0.1s;">
-                        <h3>Backend</h3>
-                        <div class="skill-badges">
-                            <span class="tech-tag">Java Spring Boot</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">REST APIs</span>
-                            <span class="tech-tag">GraphQL</span>
-                            <span class="tech-tag">Microservices</span>
-                        </div>
-                    </div>
-                    <div class="skill-card card animate-fadeInUp" style="animation-delay: 0.2s;">
-                        <h3>Mobile</h3>
-                        <div class="skill-badges">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Dart</span>
-                            <span class="tech-tag">iOS</span>
-                            <span class="tech-tag">Android</span>
-                            <span class="tech-tag">Cross-platform</span>
-                        </div>
-                    </div>
-                    <div class="skill-card card animate-fadeInUp" style="animation-delay: 0.3s;">
-                        <h3>Database</h3>
-                        <div class="skill-badges">
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Redis</span>
-                            <span class="tech-tag">SQLite</span>
-                        </div>
-                    </div>
-                    <div class="skill-card card animate-fadeInUp" style="animation-delay: 0.4s;">
-                        <h3>DevOps & Cloud</h3>
-                        <div class="skill-badges">
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">Google Cloud</span>
-                            <span class="tech-tag">CI/CD</span>
-                            <span class="tech-tag">Linux</span>
-                            <span class="tech-tag">Git</span>
-                        </div>
-                    </div>
-                    <div class="skill-card card animate-fadeInUp" style="animation-delay: 0.5s;">
-                        <h3>IA & Automação</h3>
-                        <div class="skill-badges">
-                            <span class="tech-tag">Machine Learning</span>
-                            <span class="tech-tag">OpenAI API</span>
-                            <span class="tech-tag">Automation</span>
-                            <span class="tech-tag">Data Analysis</span>
-                            <span class="tech-tag">Python</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projetos" class="section">
-            <div class="container">
-                <h2 class="section-title animate-fadeIn">Projetos Destacados</h2>
-                <p class="section-subtitle animate-fadeIn">Soluções completas que demonstram expertise técnica e inovação</p>
-                
-                <div class="projects-grid">
-                    <!-- Project Card 1 -->
-                    <div class="project-card card hover-lift animate-fadeInUp">
-                        <div class="project-header">
-                            <span class="status-badge status-produção">Produção</span>
-                            <span class="project-date">17 de agosto de 2025</span>
-                        </div>
-                        <h3>PAP - Sistema de Entregas</h3>
-                        <p>Plataforma completa de entregas ponto a ponto com React Native, Firebase e geolocalização em tempo real. Inclui matching geoespacial, pagamentos PIX e comunicação em tempo real.</p>
-                        <div class="project-tech-tags">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Expo</span>
-                        </div>
-                        <div class="project-highlights">
-                            <span class="highlight-tag">Arquitetura Serverless</span>
-                            <span class="highlight-tag">Real-time Tracking</span>
-                            <span class="highlight-tag">Pagamentos PIX</span>
-                            <span class="highlight-tag">Geolocalização</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/Giuseph66/PAP" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> Código</a>
-                            <a href="#" target="_blank" class="btn btn-primary">Demo</a>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 2 -->
-                    <div class="project-card card hover-lift animate-fadeInUp" style="animation-delay: 0.1s;">
-                        <div class="project-header">
-                            <span class="status-badge status-produção">Produção</span>
-                            <span class="project-date">15 de agosto de 2025</span>
-                        </div>
-                        <h3>Desafio Esfera Solar</h3>
-                        <p>Sistema full-stack de consulta CNPJ com Flutter Web e Node.js. Validação completa, integração OpenCNPJ API, paginação e containerização Docker.</p>
-                        <div class="project-tech-tags">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Dart</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                        </div>
-                        <div class="project-highlights">
-                            <span class="highlight-tag">Flutter Web</span>
-                            <span class="highlight-tag">API Integration</span>
-                            <span class="highlight-tag">Docker</span>
-                            <span class="highlight-tag">Full-Stack</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/Giuseph66/Desafio_projeto_esfera" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> Código</a>
-                            <a href="https://teste.neurelix.com.br/" target="_blank" class="btn btn-primary">Demo</a>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 3 -->
-                    <div class="project-card card hover-lift animate-fadeInUp" style="animation-delay: 0.2s;">
-                        <div class="project-header">
-                            <span class="status-badge status-produção">Produção</span>
-                            <span class="project-date">20 de agosto de 2025</span>
-                        </div>
-                        <h3>Sistema de Relatórios com IA</h3>
-                        <p>Ferramenta avançada para criação de relatórios acadêmicos com IA. Transcrição de áudio, geração automática com Google Gemini e exportação PDF.</p>
-                        <div class="project-tech-tags">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Google Gemini</span>
-                            <span class="tech-tag">IA</span>
-                        </div>
-                        <div class="project-highlights">
-                            <span class="highlight-tag">Google Gemini</span>
-                            <span class="highlight-tag">Transcrição de Áudio</span>
-                            <span class="highlight-tag">IA Generativa</span>
-                            <span class="highlight-tag">PDF Export</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/Giuseph66/relatorio-ia" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> Código</a>
-                            <a href="https://relatorio.neurelix.com.br/" target="_blank" class="btn btn-primary">Demo</a>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 4 -->
-                    <div class="project-card card hover-lift animate-fadeInUp" style="animation-delay: 0.3s;">
-                        <div class="project-header">
-                            <span class="status-badge status-desenvolvimento">Desenvolvimento</span>
-                            <span class="project-date">8 de agosto de 2025</span>
-                        </div>
-                        <h3>LabPage Backend</h3>
-                        <p>Sistema backend robusto construído em Spring Boot, Java. É uma das minhas linguagens de implementação para back-end, demonstrando arquitetura enterprise.</p>
-                        <div class="project-tech-tags">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Spring Boot</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">REST API</span>
-                        </div>
-                        <div class="project-highlights">
-                            <span class="highlight-tag">Spring Boot</span>
-                            <span class="highlight-tag">Enterprise Architecture</span>
-                            <span class="highlight-tag">REST API</span>
-                            <span class="highlight-tag">Database Integration</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/Giuseph66/LabPage/tree/main/java-back" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> Código</a>
-                            <a href="#" target="_blank" class="btn btn-primary">Demo</a>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 5 -->
-                    <div class="project-card card hover-lift animate-fadeInUp" style="animation-delay: 0.4s;">
-                        <div class="project-header">
-                            <span class="status-badge status-desenvolvimento">Desenvolvimento</span>
-                            <span class="project-date">19 de agosto de 2025</span>
-                        </div>
-                        <h3>FASTSHII Mobile</h3>
-                        <p>Aplicativo mobile desenvolvido para otimizar processos e melhorar a experiência do usuário com interface moderna e funcionalidades avançadas.</p>
-                        <div class="project-tech-tags">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Mobile</span>
-                            <span class="tech-tag">UI/UX</span>
-                        </div>
-                        <div class="project-highlights">
-                            <span class="highlight-tag">Mobile First</span>
-                            <span class="highlight-tag">Modern UI</span>
-                            <span class="highlight-tag">Performance</span>
-                            <span class="highlight-tag">User Experience</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/Giuseph66/FASTSHII" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> Código</a>
-                            <a href="#" target="_blank" class="btn btn-primary">Demo</a>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 6 -->
-                    <div class="project-card card hover-lift animate-fadeInUp" style="animation-delay: 0.5s;">
-                        <div class="project-header">
-                            <span class="status-badge status-produção">Produção</span>
-                            <span class="project-date">6 de junho de 2025</span>
-                        </div>
-                        <h3>Instalador Apps Linux</h3>
-                        <p>Script automatizado em Python para instalação de aplicativos essenciais no Linux, simplificando a configuração de ambientes de desenvolvimento.</p>
-                        <div class="project-tech-tags">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Linux</span>
-                            <span class="tech-tag">Bash</span>
-                            <span class="tech-tag">Automation</span>
-                        </div>
-                        <div class="project-highlights">
-                            <span class="highlight-tag">Automation</span>
-                            <span class="highlight-tag">Linux</span>
-                            <span class="highlight-tag">Developer Tools</span>
-                            <span class="highlight-tag">Productivity</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/Giuseph66/instalador_apps_linux" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> Código</a>
-                            <a href="#" target="_blank" class="btn btn-primary">Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Company Section -->
-        <section id="empresa" class="section company">
-            <div class="container">
-                <h2 class="section-title animate-fadeIn">Neurelix</h2>
-                <p class="section-subtitle animate-fadeIn">Soluções Inteligentes em Tecnologia</p>
-                
-                <div class="company-content">
-                    <p class="animate-fadeInUp">A Neurelix é minha empresa focada em desenvolvimento de software, automação e soluções inteligentes. Combinamos expertise técnica com inovação para criar produtos que realmente fazem a diferença no mercado.</p>
-                    
-                    <div class="company-pillars">
-                        <div class="pillar-card card animate-fadeInUp">
-                            <div class="pillar-icon"><i class="fas fa-laptop-code"></i></div>
-                            <h3>Desenvolvimento</h3>
-                            <p>Soluções full-stack modernas e escaláveis</p>
-                        </div>
-                        <div class="pillar-card card animate-fadeInUp" style="animation-delay: 0.1s;">
-                            <div class="pillar-icon"><i class="fas fa-robot"></i></div>
-                            <h3>Automação</h3>
-                            <p>Processos inteligentes que otimizam resultados</p>
-                        </div>
-                        <div class="pillar-card card animate-fadeInUp" style="animation-delay: 0.2s;">
-                            <div class="pillar-icon"><i class="fas fa-lightbulb"></i></div>
-                            <h3>Inovação</h3>
-                            <p>Tecnologias emergentes aplicadas na prática</p>
-                        </div>
-                    </div>
-                    
-                    <div class="company-action animate-fadeInUp">
-                        <a href="https://neurelix.com.br/" target="_blank" class="btn btn-primary hover-lift"><img src="assets/images/neurelix_sem_fundo.png" alt="Neurelix"> Visitar Site da Neurelix</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contato" class="section">
-            <div class="container">
-                <h2 class="section-title animate-fadeIn">Vamos Conversar?</h2>
-                <p class="section-subtitle animate-fadeIn">Pronto para tirar sua ideia do papel? Entre em contato e vamos transformar sua visão em realidade</p>
-                
-                <div class="contact-content">
-                    <div class="contact-info animate-fadeInLeft">
-                        <h3>Informações de Contato</h3>
-                        <p><i class="fas fa-envelope"></i> giusephgangareli@gmail.com</p>
-                        <p><i class="fas fa-phone"></i> +55 (66) 99908-6599</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Sinop-MT, Brasil</p>
-                        
-                        <h4>Redes Sociais</h4>
-                        <div class="contact-social-links">
-                            <a href="https://www.linkedin.com/in/giuseph-giangareli-1bb910272/" target="_blank" class="btn btn-linkedin hover-lift" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/Giuseph66" target="_blank" class="btn btn-github hover-lift" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://www.instagram.com/giuseph_gian/" target="_blank" class="btn btn-instagram hover-lift" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="contact-form-section animate-fadeInRight">
-                        <h3>Enviar Mensagem</h3>
-                        <p>Ou prefere falar diretamente?</p>
-                        <a href="https://wa.me//5566999086599" target="_blank" class="btn btn-whatsapp hover-lift"><i class="fab fa-whatsapp whatsapp-icon"></i> Falar no WhatsApp</a>
-                        
-                        <!-- Future: Contact Form -->
-                        <!-- <form class="contact-form">
-                            <div class="form-group">
-                                <label for="name">Nome</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Mensagem</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                        </form> -->
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-section about-me">
-                <h4>Giuseph Giangareli</h4>
-                <p>Desenvolvedor Full-Stack apaixonado por criar soluções digitais que fazem a diferença.</p>
-                <div class="footer-social-links">
-                    <a href="https://www.linkedin.com/in/giuseph-giangareli-1bb910272/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Giuseph66" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/giuseph_gian/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="footer-section quick-links">
-                <h4>Links Rápidos</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#competencias">Competências</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#empresa">Empresa</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div>
-            <div class="footer-section contact-info">
-                <h4>Contato</h4>
-                <p><i class="fas fa-envelope"></i> giusephgangareli@gmail.com</p>
-                <p><i class="fas fa-phone"></i> +55 (66) 99908-6599</p>
-                <p><i class="fas fa-map-marker-alt"></i> Sinop-MT, Brasil</p>
-            </div>
-            <div class="footer-section newsletter">
-                <h4>Neurelix</h4>
-                <p>Visite o site da minha empresa para mais informações sobre soluções inteligentes.</p>
-                <a href="https://neurelix.com.br/" target="_blank" class="btn btn-primary btn-small">Visitar Neurelix</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Giuseph Giangareli. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button -->
-    <button id="scroll-to-top" class="scroll-to-top"><i class="fas fa-arrow-up"></i></button>
+    <div class="stars" id="stars"></div>
     
-    <!-- JavaScript Modules -->
-    <script type="module" src="assets/js/main.js"></script>
+    <div class="container">
+        <div class="logo">
+            <img src="galaxy/assets/textures/eu.png" alt="Giuseph Giangareli">
+        </div>
+        
+        <h1>Giuseph Giangareli</h1>
+        <p class="subtitle">Full-Stack Developer & Fundador da Neurelix</p>
+        
+        <p class="description">
+            Transformo ideias em produtos digitais inovadores. Especializado em desenvolvimento Full-Stack, 
+            mobile apps e soluções com inteligência artificial. Escolha como deseja explorar meu portfólio:
+        </p>
+        
+        <div class="mode-selector">
+            <a href="/galaxy" class="mode-card galaxy">
+                <div class="mode-icon">🚀</div>
+                <div class="mode-title">Galaxy Explorer</div>
+                <p class="mode-desc">
+                    Navegue pelo espaço em uma experiência 3D interativa. 
+                    Explore projetos e habilidades em uma galáxia imersiva.
+                </p>
+                <span class="badge new">NOVO</span>
+            </a>
+            
+            <a href="/classic" class="mode-card classic">
+                <div class="mode-icon">📄</div>
+                <div class="mode-title">Modo Clássico</div>
+                <p class="mode-desc">
+                    Visualização tradicional com todas as informações 
+                    organizadas em seções navegáveis.
+                </p>
+                <span class="badge">TRADICIONAL</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Generate stars
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 3 + 's';
+            starsContainer.appendChild(star);
+        }
+
+        // Store mode preference
+        document.querySelectorAll('.mode-card').forEach(card => {
+            card.addEventListener('click', (e) => {
+                const mode = card.classList.contains('galaxy') ? 'galaxy' : 'classic';
+                localStorage.setItem('portfolioMode', mode);
+            });
+        });
+
+        // Auto-redirect if preference is set
+        const savedMode = localStorage.getItem('portfolioMode');
+        if (savedMode && window.location.search.includes('auto=false') === false) {
+            // Optional: uncomment to auto-redirect
+            // window.location.href = savedMode === 'galaxy' ? '/galaxy' : '/classic';
+        }
+    </script>
 </body>
 </html>

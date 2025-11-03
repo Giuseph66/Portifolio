@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio Galáctico de Giuseph Giangareli - Explore o espaço e descubra projetos">
+    <title>Galaxy Explorer | Giuseph Giangareli</title>
+    <link rel="icon" type="image/x-icon" href="assets/textures/retomar.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="galaxy.css">
+</head>
+<body>
+    <div id="app"></div>
+    
+    <!-- Load Three.js and dependencies -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "../vendor/three.module.js"
+        }
+    }
+    </script>
+    
+    <!-- Load main application -->
+    <script type="module" src="scripts/main.js"></script>
+    
+    <!-- Accessibility -->
+    <div id="sr-only" style="position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden;">
+        <h1>Portfólio Galáctico de Giuseph Giangareli</h1>
+        <p>Navegue pelo espaço usando as teclas WASD. Pressione Espaço para ativar o autopilot. Pressione G para alternar para o modo clássico.</p>
+    </div>
+</body>
+</html>
