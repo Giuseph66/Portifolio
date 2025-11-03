@@ -55,7 +55,7 @@ Aqui você encontrará uma seleção dos meus trabalhos mais relevantes, demonst
 
 ## 📄 Licença
 
-MIT - Copyright (c) 2024 Giuseph Giangareli
+MIT - Copyright (c) 2025 Giuseph Giangareli
 
 ## 👨‍💻 Autor
 
