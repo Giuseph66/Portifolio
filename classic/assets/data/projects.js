@@ -4,7 +4,7 @@ export const projectsData = [
         id: 'pap-sistema-entregas',
         title: 'PAP - Sistema de Entregas',
         date: '2025-08-17',
-        status: 'production',
+        status: 'development',
         category: 'mobile',
         description: 'Plataforma completa de entregas ponto a ponto com React Native, Firebase e geolocalização em tempo real. Inclui matching geoespacial, pagamentos PIX e comunicação em tempo real.',
         longDescription: `
@@ -132,7 +132,7 @@ export const projectsData = [
             'Alta qualidade dos relatórios gerados',
             'Sistema estável e confiável'
         ],
-        githubUrl: null,
+        githubUrl: 'https://github.com/Giuseph66/Relatorios-com-ia',
         demoUrl: 'https://relatorio.neurelix.com.br/',
         images: [],
         tags: ['ai', 'javascript', 'gemini', 'audio', 'pdf']
@@ -183,6 +183,50 @@ export const projectsData = [
         images: [],
         tags: ['backend', 'java', 'spring-boot', 'postgresql', 'api']
     },
+    {
+        id: 'nfce-scan',
+        title: 'NFC-e Scan',
+        date: '2025-11-03',
+        status: 'production',
+        category: 'webapp',
+        description: 'Leitor de QR Code de NFC-e direto no navegador, com histórico local e busca por produto.',
+        longDescription: `
+          Aplicação web para leitura e consulta de NFC-e. Permite escanear o QR Code do
+          cupom fiscal usando a câmera do dispositivo, inserir o link manualmente, visualizar
+          os dados essenciais da nota (chave, emitente, ambiente e itens) e manter um histórico
+          local das notas lidas. Inclui página de busca por produto que agrega itens de diferentes
+          notas e exibe badges quando houver padronização de dados por IA.
+          
+          Páginas:
+          - Leitor: captura via câmera (iniciar/parar) e processamento manual de link.
+          - Histórico: lista local de notas lidas com navegação/paginação.
+          - Busca por Produto: pesquisa consolidada de itens, com indicação de dados padronizados por IA.
+        `,
+        technologies: ['HTML5', 'CSS3', 'JavaScript', 'MediaDevices/getUserMedia', 'LocalStorage'],
+        highlights: ['Leitura de QR Code', 'Histórico local de notas', 'Busca por produto (IA)', 'Interface responsiva'],
+        features: [
+          'Leitor com câmera (Iniciar/Parar) e solicitação de permissão',
+          'Entrada manual de link NFC-e (Processar Link)',
+          'Exibição de chave, emitente, ambiente e itens da nota',
+          'Histórico local de notas lidas com navegação',
+          'Busca por produto com badges indicando padronização por IA'
+        ],
+        challenges: [
+          'Compatibilidade e permissões de câmera em diferentes navegadores/dispositivos',
+          'Padronização de dados entre portais SEFAZ',
+          'Performance em dispositivos móveis',
+          'Privacidade dos dados armazenados localmente'
+        ],
+        results: [
+          'Leitura rápida de QR Code de NFC-e no navegador',
+          'Consulta consolidada de itens por produto a partir de múltiplas notas',
+          'Fluxo simples para reprocessar e escanear novamente'
+        ],
+        githubUrl: 'https://github.com/Giuseph66/Scan-NFC-e-',
+        demoUrl: 'https://nfc-scan.neurelix.com.br/',
+        images: [],
+        tags: ['webapp', 'nfce', 'qr-code', 'scanner', 'javascript']
+      },      
     {
         id: 'fastshii-mobile',
         title: 'FASTSHII Mobile',
