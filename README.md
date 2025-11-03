@@ -2,6 +2,25 @@
 
 Portfólio interativo de Giuseph Giangareli com dois modos únicos: **Galaxy Explorer** (3D espacial) e **Classic** (tradicional).
 
+## 👋 Sobre Mim
+
+Olá! Sou **Giuseph Giangareli**, um desenvolvedor apaixonado por tecnologia e inovação. Especializo-me em criar experiências digitais imersivas e soluções web de alta performance.
+
+### 💼 O que eu faço
+- **Desenvolvimento Web Full-Stack**: React, Node.js, Express, MongoDB
+- **Desenvolvimento Mobile**: Flutter, React Native
+- **Gráficos 3D**: Three.js, WebGL, realidade virtual
+- **UI/UX Design**: Interfaces intuitivas e experiências de usuário excepcionais
+- **Performance & Otimização**: Aplicações rápidas e escaláveis
+
+### 🚀 Minha Abordagem
+Acredito que a tecnologia deve ser acessível e emocionante. Cada projeto é uma oportunidade de combinar criatividade técnica com soluções práticas, resultando em produtos que não apenas funcionam perfeitamente, mas também encantam os usuários.
+
+### 🎯 Atualmente
+Buscando oportunidades para contribuir com equipes inovadoras e projetos desafiadores que impactem positivamente a experiência digital das pessoas.
+
+---
+
 ## 🚀 Início Rápido
 
 ### Pré-requisitos
